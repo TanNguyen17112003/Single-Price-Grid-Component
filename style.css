@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray:  hsl(204, 43%, 93%);
+    --graylish-blue: hsl(218, 22%, 67%);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--light-gray);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 0.01px);
+}
+
+.container {
+    max-width: 300px;
+}
+.container .container-1 {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.container .container-1 h3 {
+    color: var(--cyan);
+}
+
+.container .container-1 h4 {
+    color: var(--bright-yellow);
+    margin-bottom: 1rem;
+}
+
+.container .container-1 p {
+    color: var(--graylish-blue);
+    /* font-weight: 700; */
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.contain-register {
+    padding: 2rem;
+    background-color: var(--cyan);
+}
+
+.container .container-2 h3 {
+    color: #fff;
+}
+
+.contain-register > div {
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.contain-register > div > span:first-child {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 0.6rem;
+}
+
+.contain-register > div > span:last-child {
+    color: hsl(204deg 36% 83%);
+}
+
+.contain-register p {
+    color: var(--light-gray);
+    margin-bottom: 1.5rem;
+}
+
+.contain-register button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--bright-yellow);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: var(--light-gray);
+    font-size: 17px;
+    margin-bottom: 1rem;
+}
+
+.contain-reason {
+    background-color: rgb(74 190 189);
+    padding: 2rem;
+}
+
+.contain-reason p {
+    padding-right: 4rem;
+    line-height: 1.8;
+    color: var(--light-gray);
+    text-align: left;
+}
+
+
+@media screen and (min-width: 776px) {
+    .container {
+        min-width: 700px;
+    }
+    .container-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .container-register {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-1 {
+        padding: 2rem;
+    }
+}
